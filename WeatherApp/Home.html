@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Enter your location">
+            <button class="fa-solid fa-magnifying-glass"></button>
+        </div>
+
+        <div class="not-found">
+            <img src="Images/404.png" alt="Page Not Found">
+            <p>Oops! Location not found :/</p>
+        </div>
+
+        <div class="weather-box">
+            <img src="">
+            <p class="temperature"></p>
+            <p class="description"></p>
+        </div>
+
+        <div class="weather-details">
+            <div class="humidity d-none">
+              <div class="text">
+                <span id="humidity"></span>
+                <p>Humidity</p>
+              </div>
+            </div>
+            <div class="wind d-none">
+              <div class="text">
+                <span id="windSpeed"></span>
+                <p>Wind Speed</p>
+              </div>
+            </div>
+            <div class="pressure d-none">
+              <div class="text">
+                <span id="pressure"></span>
+                <p>Air Pressure</p>
+              </div>
+            </div>
+          </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <script src="Script.js"></script>
+    <footer class="footer">&copy; 2024 Weather App made by Jakub Strugała -<a href="https://github.com/struggyyy" target="_blank">GitHub</a></footer>
+</body>
+
+</html>
